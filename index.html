@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NoorQibla | AR Nexus Studios</title>
+    <meta name="description" content="Official Privacy Policy for NoorQibla Islamic Prayer Times, Qibla Compass, Quran, and Azan Alarm app by AR Nexus Studios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0A1424;
+            --primary-light: #132238;
+            --accent: #D4AF37;
+            --accent-light: #F4E295;
+            --accent-dark: #997A1E;
+            --emerald: #10B981;
+            --surface: #FFFFFF;
+            --surface-subtle: #F8FAFC;
+            --surface-card: #FFFFFF;
+            --border: #E2E8F0;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --text-light: #94A3B8;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--surface-subtle);
+            color: var(--text-main);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #070E1A 0%, #0D1A2D 50%, #152742 100%);
+            color: #FFFFFF;
+            padding: 60px 24px 50px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.12) 0%, transparent 60%),
+                              radial-gradient(circle at 85% 70%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--accent-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .brand-badge span.arabic {
+            font-family: 'Amiri', serif;
+            font-size: 1.1rem;
+            line-height: 1;
+            color: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 14px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p.lead {
+            font-size: 1.1rem;
+            color: #CBD5E1;
+            max-width: 680px;
+            line-height: 1.6;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .meta-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 12px 16px;
+        }
+
+        .meta-item .label {
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .meta-item .value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        /* Main Content Layout */
+        .content-wrap {
+            padding: 40px 24px 80px;
+        }
+
+        /* Summary Quick Highlights */
+        .highlights-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 36px;
+            position: relative;
+        }
+
+        .highlights-card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 6px; height: 100%;
+            background: var(--accent);
+            border-top-left-radius: var(--radius);
+            border-bottom-left-radius: var(--radius);
+        }
+
+        .highlights-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .pill-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: var(--surface-subtle);
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-item .check {
+            color: var(--emerald);
+            font-weight: 800;
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .pill-item span {
+            font-size: 0.88rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* Policy Sections */
+        .policy-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .policy-card h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #F1F5F9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-card h3 {
+            font-size: 1.08rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin: 22px 0 10px;
+        }
+
+        .policy-card p {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-size: 0.96rem;
+        }
+
+        .policy-card ul, .policy-card ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .policy-card li {
+            margin-bottom: 8px;
+        }
+
+        .policy-card li strong {
+            color: var(--text-main);
+        }
+
+        /* Feature Grid in Section 2 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .feature-box {
+            background: var(--surface-subtle);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+
+        .feature-box:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .feature-box .feat-icon {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .feature-box h4 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .feature-box p {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        /* Permissions Table */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        thead {
+            background: #F1F5F9;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        th, td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        code {
+            background: #E2E8F0;
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.83rem;
+            color: var(--primary-light);
+        }
+
+        .badge-essential {
+            background: #DCFCE7;
+            color: #15803D;
+            padding: 3px 8px;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .badge-alarm {
+            background: #FEF3C7;
+            color: #B45309;
+            padding: 3px 8px;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Developer & Contact Card */
+        .contact-card {
+            background: linear-gradient(135deg, #0A1424 0%, #152742 100%);
+            color: #FFFFFF;
+            border-radius: var(--radius);
+            padding: 36px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-card h2 {
+            color: var(--accent);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            font-size: 1.35rem;
+        }
+
+        .contact-card p {
+            color: #CBD5E1;
+            margin-bottom: 12px;
+        }
+
+        .contact-card a {
+            color: var(--accent-light);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            color: #FFFFFF;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-muted);
+            font-size: 0.86rem;
+            border-top: 1px solid var(--border);
+            background: #FFFFFF;
+        }
+
+        @media (max-width: 640px) {
+            .hero {
+                padding: 40px 20px 36px;
+            }
+            .policy-card {
+                padding: 22px 18px;
+            }
+            .contact-card {
+                padding: 24px 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .hero {
+                background: none;
+                color: black;
+                border-bottom: 2px solid black;
+                padding: 20px 0;
+            }
+            .policy-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                page-break-inside: avoid;
+            }
+            .contact-card {
+                background: none;
+                color: black;
+                border: 1px solid black;
+            }
+            .contact-card h2, .contact-card a {
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO HEADER -->
+    <header class="hero">
+        <div class="container">
+            <div class="brand-badge">
+                <span class="arabic">نور القبلة</span>
+                <span>NoorQibla • Privacy Policy</span>
+            </div>
+            <h1>Privacy Policy for NoorQibla</h1>
+            <p class="lead">
+                Your privacy and trust are paramount. NoorQibla is built from the ground up as an offline-first Islamic companion dedicated to respecting your personal dignity, safeguarding device data, and delivering accurate Salah times with zero remote tracking.
+            </p>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="label">Developer / Studio</span>
+                    <span class="value">AR Nexus Studios</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">Application ID (Package)</span>
+                    <span class="value"><code>com.noorqibla</code></span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">App Version</span>
+                    <span class="value">v2.0 (Build 2)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">Effective &amp; Last Updated</span>
+                    <span class="value">September 8, 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="content-wrap">
+        <div class="container">
+
+            <!-- QUICK SUMMARY CARD -->
+            <section class="highlights-card">
+                <h2><span>🛡️</span> Privacy Highlights at a Glance</h2>
+                <div class="pill-grid">
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>100% Offline-First Architecture:</strong> All prayer time calculations &amp; Qibla math occur strictly on your device.</span>
+                    </div>
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>No Personal Data Selling:</strong> We never sell, rent, or trade your data or location to any brokers or ad networks.</span>
+                    </div>
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>Zero Cloud Account Mandatory:</strong> Use the complete app instantly without signup, email passwords, or forced registration.</span>
+                    </div>
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>Device-Only Database:</strong> Duas favorites, Tasbih counts, and Ramadan logs stay exclusively in your private local SQLite storage.</span>
+                    </div>
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>Transparent Permissions:</strong> GPS location is used solely for astronomical solar calculations &amp; Qibla bearing.</span>
+                    </div>
+                    <div class="pill-item">
+                        <div class="check">✓</div>
+                        <span><strong>Safe for All Ages:</strong> Complies with Google Play Families Policy and COPPA standards for all users.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 1: INTRODUCTION -->
+            <article class="policy-card">
+                <h2>1. Introduction &amp; Ownership</h2>
+                <p>
+                    This Privacy Policy explains how <strong>AR Nexus Studios</strong> ("we", "our", or "us") handles information when you use the <strong>NoorQibla</strong> mobile application (Package Name: <code>com.noorqibla</code>) available on Google Play.
+                </p>
+                <p>
+                    We believe that spiritual tools should never compromise user privacy. NoorQibla does not collect personal identities, does not track you across other applications, and does not maintain centralized user profiles.
+                </p>
+            </article>
+
+            <!-- SECTION 2: ALL APPLICATION FEATURES -->
+            <article class="policy-card">
+                <h2>2. Application Features &amp; Data Interaction</h2>
+                <p>
+                    NoorQibla is a comprehensive Islamic utility application engineered with privacy-by-design. Below is a detailed description of all app features and their respective data interactions:
+                </p>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">⏰</div>
+                        <h4>1. Accurate Prayer Times &amp; Solar Milestones</h4>
+                        <p>
+                            Calculates Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha, Qiyam, Islamic Midnight, and Last Third of Night using astronomical sun position algorithms on device. Supports multiple worldwide calculation conventions (MWL, ISNA, Egypt, Makkah, Karachi, Tehran, Jafari) and Hanafi/Shafi'i Asr juristic methods.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">🔊</div>
+                        <h4>2. Automatic Azan Audio &amp; Namaz Alarms</h4>
+                        <p>
+                            Plays the call to prayer (Azan) or Takbeer automatically when Namaz time arrives. Includes high-priority lock-screen and closed-app alert popups with immediate <strong>"Stop"</strong> and <strong>"After 2 min"</strong> snooze buttons, custom audio file support, and unattended auto-stop safeguards.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">🧭</div>
+                        <h4>3. High-Precision Qibla Compass</h4>
+                        <p>
+                            Uses your device's built-in magnetometer and accelerometer to compute real-time bearing toward the Holy Kaaba in Makkah al-Mukarramah. Provides visual alignment rings and haptic vibration feedback. Calculations run entirely in local memory.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">🕌</div>
+                        <h4>4. Nearby Masjids Finder</h4>
+                        <p>
+                            Identifies mosques in your vicinity using mathematical spherical distance coordinates. Enables searching by masjid name or neighborhood and opens external map navigation only upon explicit user tap.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">📖</div>
+                        <h4>5. Holy Quran Reader</h4>
+                        <p>
+                            Features complete Quranic Surahs with Arabic calligraphy text, authentic English translations, and Ayah-by-Ayah reading. Allows bookmarking favorite verses stored locally in the offline database.
+                        </p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">🤲</div>
+                        <h4>6. Authentic Islamic Duas &amp; Athkar</h4>
+                        <p>
+                            Comprehensive repository of Hisnul Muslim supplications categorized for morning, evening, travel, protection, forgiveness, and Salah. Includes Arabic text, transliteration, English meanings, and one-tap favorite marking.
+                        </p>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">📿</div>
+                        <h4>7. Digital Smart Tasbih Counter</h4>
+                        <p>
+                            Tactile Dhikr counter with customizable targets (33, 99, 100, custom), haptic vibration feedback on completion, sound effects, reset safety confirmation, and persistent tally retention.
+                        </p>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">📅</div>
+                        <h4>8. Month-Wise Islamic Calendar &amp; Timetable</h4>
+                        <p>
+                            Complete monthly Salah timetable with day-by-day lookup, dual Gregorian and Hijri calendar dates, and Imsak/Fasting schedules. Accessible completely offline.
+                        </p>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">🌙</div>
+                        <h4>9. Ramadan Fasting &amp; Ibadah Tracker</h4>
+                        <p>
+                            Live Suhoor and Iftar countdown timers, daily Ramadan checklist (Fasting, Tarawih, Quran recitation, Sadaqah charity), and persistent historical logs to track spiritual consistency.
+                        </p>
+                    </div>
+
+                    <!-- Feature 10 -->
+                    <div class="feature-box">
+                        <div class="feat-icon">📋</div>
+                        <h4>10. Detailed Namaz Rakat Guide</h4>
+                        <p>
+                            Comprehensive educational guide specifying exact rakat counts (Farz, Sunnah Mu'akkadah, Sunnah Ghair Mu'akkadah, Nafl, Witr) for Fajr, Dhuhr, Asr, Maghrib, Isha, Jummah, Tahajjud, and Taraweeh prayers.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SECTION 3: PERMISSIONS DISCLOSURE -->
+            <article class="policy-card">
+                <h2>3. Android Permissions &amp; Hardware Usage</h2>
+                <p>
+                    In accordance with Google Play Developer Policies, NoorQibla only requests permissions that are strictly necessary to deliver its core religious utility features. Below is our complete, transparent permissions disclosure:
+                </p>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Permission</th>
+                                <th>Type</th>
+                                <th>Purpose &amp; Privacy Safeguard</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                                <td><span class="badge-essential">Location</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Needed exclusively to calculate accurate local prayer times (based on solar zenith angles), determine the exact compass bearing to the Kaaba in Makkah, and calculate distances to nearby masjids.<br>
+                                    <strong>Privacy Safeguard:</strong> Coordinates are processed <em>locally on your phone</em>. Your location is NEVER transmitted to remote servers, never logged, and never shared with advertisers or third parties.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>SCHEDULE_EXACT_ALARM</code><br><code>USE_EXACT_ALARM</code></td>
+                                <td><span class="badge-alarm">Alarm</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Allows the app to wake the system at the exact second prayer time starts, even in Android battery Doze mode, so you never miss Salah.<br>
+                                    <strong>Privacy Safeguard:</strong> Used strictly for user-configured Namaz alarms. Contains no background analytics.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>USE_FULL_SCREEN_INTENT</code></td>
+                                <td><span class="badge-alarm">Alarm Popup</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Enables displaying the high-priority Azan alarm popup over the lock screen or while the app is closed, presenting immediate <strong>"Stop"</strong> and <strong>"After 2 min"</strong> snooze buttons.<br>
+                                    <strong>Privacy Safeguard:</strong> Only displayed when an enabled prayer alarm triggers.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>POST_NOTIFICATIONS</code></td>
+                                <td><span class="badge-essential">Notification</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Displays upcoming prayer countdowns, Azan alerts, and interactive notification buttons ("Stop", "After 2 min") on Android 13+.<br>
+                                    <strong>Privacy Safeguard:</strong> No promotional or commercial push notifications are ever sent.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>VIBRATE</code></td>
+                                <td><span class="badge-essential">Hardware</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Provides haptic feedback when the Qibla compass aligns with Makkah, gives tactile pulses on Tasbih counts, and supports silent prayer alerts.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>WAKE_LOCK</code></td>
+                                <td><span class="badge-alarm">Audio</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Ensures Azan audio playback plays uninterrupted when the screen turns off during prayer time.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                                <td><span class="badge-essential">System</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Automatically reschedules prayer alarms when your phone restarts, ensuring alarm continuity.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>INTERNET</code></td>
+                                <td><span class="badge-essential">Network</span></td>
+                                <td>
+                                    <strong>Purpose:</strong> Used for reverse-geocoding city names when detecting location, and accessing external map links when navigating to a masjid.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- SECTION 4: DATA STORAGE AND RETENTION -->
+            <article class="policy-card">
+                <h2>4. Local Data Storage &amp; Retention</h2>
+                <p>
+                    All personal customizations and activity records in NoorQibla are stored locally in an on-device SQLite database utilizing the Android Room persistence library. This includes:
+                </p>
+                <ul>
+                    <li><strong>Prayer Preferences:</strong> Selected calculation methods, juristic rules, alarm sound choices, volume, and offset minutes.</li>
+                    <li><strong>Saved Locations:</strong> Cached coordinates and city names for offline prayer time calculations.</li>
+                    <li><strong>Spiritual Records:</strong> Quran bookmarks, favorite Duas, Tasbih count histories, and Ramadan fasting logs.</li>
+                </ul>
+                <p>
+                    <strong>Data Retention &amp; Deletion:</strong> You have absolute control over this data. Since data is stored solely on your physical device, clearing the app's cache/storage through Android Settings or uninstalling NoorQibla permanently removes all stored information immediately.
+                </p>
+            </article>
+
+            <!-- SECTION 5: THIRD-PARTY SDKs & SERVICES -->
+            <article class="policy-card">
+                <h2>5. Third-Party Services &amp; Advertising</h2>
+                <p>
+                    NoorQibla does not incorporate invasive behavioral tracking SDKs or ad monetization networks that harvest user identities. The application does not profile users, track browsing habits, or link identities across third-party websites or applications.
+                </p>
+            </article>
+
+            <!-- SECTION 6: CHILDREN'S PRIVACY -->
+            <article class="policy-card">
+                <h2>6. Children's Privacy (COPPA &amp; GDPR-K)</h2>
+                <p>
+                    NoorQibla is designed as a family-friendly Islamic educational and worship utility suitable for Muslims of all ages, including children learning to pray. We do not knowingly collect, request, or solicit any personal information from children under the age of 13 (or under 16 in applicable jurisdictions). The application fully complies with the Children’s Online Privacy Protection Act (COPPA) and Google Play Families Policy requirements.
+                </p>
+            </article>
+
+            <!-- SECTION 7: GOOGLE PLAY DEVELOPER PROGRAM POLICY COMPLIANCE -->
+            <article class="policy-card">
+                <h2>7. Google Play Developer Program Policy Compliance</h2>
+                <p>
+                    We actively adhere to Google Play Developer Program Policies, including:
+                </p>
+                <ul>
+                    <li><strong>Prominent Location Disclosure:</strong> Location access is requested at runtime with in-app explanatory context, used strictly to compute prayer times and compass orientation, and never shared or sold.</li>
+                    <li><strong>Exact Alarm Policies:</strong> Alarms comply with Android 14+ exact alarm policies for user-scheduled prayer times and calls to worship.</li>
+                    <li><strong>Full Screen Intent Compliance:</strong> Full-screen alerts are limited strictly to urgent time-sensitive religious alarms scheduled by the user.</li>
+                    <li><strong>No Misleading Conduct:</strong> The app delivers verified, authentic Islamic content without misleading claims or deceptive background activities.</li>
+                </ul>
+            </article>
+
+            <!-- SECTION 8: POLICY UPDATES -->
+            <article class="policy-card">
+                <h2>8. Updates to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy periodically to reflect new features, updated Android operating system capabilities, or legal requirements. Any modifications will be posted to this page with an updated "Last Updated" date. We encourage you to review this page periodically.
+                </p>
+            </article>
+
+            <!-- SECTION 9: DEVELOPER CONTACT -->
+            <section class="contact-card">
+                <h2>9. Developer &amp; Studio Contact</h2>
+                <p>
+                    If you have questions, feedback, or privacy inquiries regarding <strong>NoorQibla</strong>, please contact our development team directly:
+                </p>
+                <p>
+                    <strong>Developer / Publisher:</strong> AR Nexus Studios<br>
+                    <strong>Application:</strong> NoorQibla (نور القبلة)<br>
+                    <strong>Package Name:</strong> <code>com.noorqibla</code><br>
+                    <strong>Contact Email:</strong> <a href="mailto:telidanish2006@gmail.com">telidanish2006@gmail.com</a>
+                </p>
+                <p style="margin-top: 16px; font-size: 0.9rem; color: #94A3B8;">
+                    AR Nexus Studios is dedicated to creating high-quality, authentic Islamic software with total privacy integrity.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 <strong>AR Nexus Studios</strong>. All rights reserved.</p>
+            <p style="margin-top: 6px; color: var(--text-light); font-size: 0.8rem;">
+                NoorQibla • Package: <code>com.noorqibla</code> • Version 2.0
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
